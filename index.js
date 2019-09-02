@@ -1,5 +1,5 @@
-import defang from './src/defang';
+const functions = require('./src');
 
-export {
-  defang,
+module.exports = {
+  functions,
 };
