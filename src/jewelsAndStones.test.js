@@ -1,6 +1,6 @@
 const jewels = require('./jewelsAndStones');
 
-test('jewelsAndStonesSet missing data test cases', () => {
+test('jewelsAndStonesSet invalid data test cases', () => {
   expect(jewels.jewelsAndStonesSet('', '')).toBe('');
   expect(jewels.jewelsAndStonesSet('', 'aAbBcCdD')).toBe('');
   expect(jewels.jewelsAndStonesSet('aA', '')).toBe('');
@@ -13,7 +13,7 @@ test('jewelsAndStonesSet test cases', () => {
   expect(jewels.jewelsAndStonesSet('aA', 'bBcCdD')).toBe(0);
 });
 
-test('jewelsAndStonesArray missing data test cases', () => {
+test('jewelsAndStonesArray invalid data test cases', () => {
   expect(jewels.jewelsAndStonesArray('', '')).toBe('');
   expect(jewels.jewelsAndStonesArray('', 'aAbBcCdD')).toBe('');
   expect(jewels.jewelsAndStonesArray('aA', '')).toBe('');

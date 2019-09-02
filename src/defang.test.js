@@ -1,6 +1,6 @@
 const defang = require('./defang');
 
-test('defang missing data test cases', () => {
+test('defang invalid data test cases', () => {
   expect(defang('')).toBe('');
   expect(defang(null)).toBe('');
   expect(defang(undefined)).toBe('');
