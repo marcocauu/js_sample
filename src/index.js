@@ -3,6 +3,9 @@ const jewels = require('./jewelsAndStones');
 const sortArrayByParity = require('./sortArrayByParity');
 const morseCode = require('./morseCode');
 const flipImage = require('./flipImage');
+const relativeSortArray = require('./relativeSortArray');
+const repeatedNTimes = require('./repeatedNTimes');
+const complement = require('./complement');
 
 module.exports = {
   defang,
@@ -10,4 +13,7 @@ module.exports = {
   sortArrayByParity,
   morseCode,
   flipImage,
+  relativeSortArray,
+  repeatedNTimes,
+  complement,
 };
