@@ -2,35 +2,35 @@
  * Leetcode question pulled from
  * https://leetcode.com/problems/jewels-and-stones/
  * This implementation uses Set()
- * @param {*} jewel string
- * @param {*} stone string
- * @return int
+ * @param {string} j
+ * @param {string} s
+ * @return {int}}
  */
-const jewelsAndStonesSet = (jewel = '', stone = '') => {
-  if (!jewel || !stone || !jewel.trim() || !stone.trim()) {
+const jewelsAndStonesSet = (j = '', s = '') => {
+  if (!j || !s || !j.trim() || !s.trim()) {
     return '';
   }
   const set = new Set();
-  jewel.split('').map(jewel => {
-    set.add(jewel);
+  j.split('').map(j => {
+    set.add(j);
   });
-  return stone.split('').filter(element => set.has(element)).length;
+  return s.split('').filter(e => set.has(e)).length;
 };
 
 /**
  * Leetcode question pulled from
  * https://leetcode.com/problems/jewels-and-stones/
  * This implementation uses Array includes()
- * @param {*} jewel string
- * @param {*} stone string
+ * @param {*} j string
+ * @param {*} s string
  * @return int
  */
-const jewelsAndStonesArray = (jewel = '', stone = '') => {
-  if (!jewel || !stone || !jewel.trim() || !stone.trim()) {
+const jewelsAndStonesArray = (j = '', s = '') => {
+  if (!j || !s || !j.trim() || !s.trim()) {
     return '';
   }
-  const jewels = jewel.split('');
-  return stone.split('').filter(element => jewels.includes(element)).length;
+  const jewels = j.split('');
+  return s.split('').filter(e => jewels.includes(e)).length;
 };
 
 module.exports = {

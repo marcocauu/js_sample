@@ -9,7 +9,7 @@ test('uniqueMorseRepresentations invalid data case', () => {
   expect(uniqueMorseRepresentations(undefined)).toEqual(0);
 });
 
-test('uniqueMorseRepresentations test cases', () => {
+test('uniqueMorseRepresentations unit test', () => {
   expect(uniqueMorseRepresentations(['gin', 'zen', 'gig', 'msg'])).toEqual(2);
   expect(uniqueMorseRepresentations(['gin', 'zen'])).toEqual(1);
   expect(uniqueMorseRepresentations(['gin', 'zen', 'gig', 'msg', 5, 6])).toEqual(2); // eslint-disable-line max-len

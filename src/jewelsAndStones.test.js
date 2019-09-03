@@ -8,7 +8,7 @@ test('jewelsAndStonesSet invalid data test cases', () => {
   expect(jewels.jewelsAndStonesSet()).toBe('');
 });
 
-test('jewelsAndStonesSet test cases', () => {
+test('jewelsAndStonesSet unit test', () => {
   expect(jewels.jewelsAndStonesSet('aA', 'aAbBcCdD')).toBe(2);
   expect(jewels.jewelsAndStonesSet('aA', 'bBcCdD')).toBe(0);
 });
@@ -21,7 +21,7 @@ test('jewelsAndStonesArray invalid data test cases', () => {
   expect(jewels.jewelsAndStonesArray()).toBe('');
 });
 
-test('jewelsAndStonesArray test cases', () => {
+test('jewelsAndStonesArray unit test', () => {
   expect(jewels.jewelsAndStonesArray('aA', 'aAbBcCdD')).toBe(2);
   expect(jewels.jewelsAndStonesArray('aA', 'bBcCdD')).toBe(0);
 });

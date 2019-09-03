@@ -7,7 +7,7 @@ test('defang invalid data test cases', () => {
   expect(defang()).toBe('');
 });
 
-test('defang test cases', () => {
+test('defang unit test', () => {
   expect(defang('1.1.1.1')).toBe('1[.]1[.]1[.]1');
   expect(defang('......')).toBe('[.][.][.][.][.][.]');
 });

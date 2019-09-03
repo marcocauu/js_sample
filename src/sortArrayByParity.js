@@ -1,17 +1,17 @@
 /**
  * Leetcode question pulled from
- * https://leetcode.com/problems/sort-array-by-parity/submissions/
- * @param {*} array
- * @return array
+ * https://leetcode.com/problems/sort-a-by-parity/submissions/
+ * @param {integer[]}
+ * @return {integer[]}
  */
-const sortArrayByParity = (array = []) => {
-  if (!array || !array.length || !Array.isArray(array)) {
+const sortArrayByParity = (a = []) => {
+  if (!a || !a.length || !Array.isArray(a)) {
     return [];
   }
   const evenArray = [];
   const oddArray = [];
-  array.map(element => {
-    if (parseInt(element, 10)) {
+  a.map(element => {
+    if (Number.isInteger(element)) {
       if (element % 2 === 0) {
         evenArray.push(element);
       } else {
