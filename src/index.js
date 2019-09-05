@@ -6,6 +6,7 @@ const flipImage = require('./flipImage');
 const relativeSortArray = require('./relativeSortArray');
 const repeatedNTimes = require('./repeatedNTimes');
 const complement = require('./complement');
+const threePartsEqualSum = require('./threePartsEqualSum');
 
 module.exports = {
   defang,
@@ -16,4 +17,5 @@ module.exports = {
   relativeSortArray,
   repeatedNTimes,
   complement,
+  threePartsEqualSum,
 };
